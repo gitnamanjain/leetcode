@@ -7,6 +7,6 @@ class Solution:
                 return([i+1, j+1])
             elif(numbers[i]+numbers[j] > target):
                 j = j-1
-            else:
+            elif(numbers[i]+numbers[j] < target):
                 i = i+1
         return([])
